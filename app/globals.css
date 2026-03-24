@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 42 33% 97%;
+  --foreground: 210 24% 14%;
+  --card: 0 0% 100%;
+  --card-foreground: 210 24% 14%;
+  --muted: 42 28% 92%;
+  --muted-foreground: 215 16% 42%;
+  --border: 32 18% 82%;
+  --accent: 173 58% 39%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 173 58% 39%;
+}
+
+.dark {
+  --background: 215 34% 10%;
+  --foreground: 39 36% 94%;
+  --card: 215 30% 14%;
+  --card-foreground: 39 36% 94%;
+  --muted: 216 22% 20%;
+  --muted-foreground: 34 15% 73%;
+  --border: 216 18% 24%;
+  --accent: 173 72% 44%;
+  --accent-foreground: 215 34% 10%;
+  --ring: 173 72% 44%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(var(--background));
+  background-image: radial-gradient(circle at top, hsl(var(--accent) / 0.12), transparent 30%),
+    linear-gradient(180deg, hsl(var(--background)), hsl(var(--background)));
+  color: hsl(var(--foreground));
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+::selection {
+  background: hsl(var(--accent) / 0.24);
+  color: hsl(var(--foreground));
+}
+
+@layer base {
+  a {
+    @apply transition-colors;
+  }
+
+  .prose {
+    --tw-prose-body: hsl(var(--foreground));
+    --tw-prose-headings: hsl(var(--foreground));
+    --tw-prose-links: hsl(var(--accent));
+    --tw-prose-bold: hsl(var(--foreground));
+    --tw-prose-bullets: hsl(var(--accent) / 0.5);
+    --tw-prose-quotes: hsl(var(--foreground));
+    --tw-prose-code: hsl(var(--foreground));
+    --tw-prose-pre-code: hsl(var(--foreground));
+    --tw-prose-pre-bg: hsl(var(--muted) / 0.88);
+  }
+
+  .dark .prose {
+    --tw-prose-body: hsl(var(--foreground));
+    --tw-prose-headings: hsl(var(--foreground));
+    --tw-prose-links: hsl(var(--accent));
+    --tw-prose-bold: hsl(var(--foreground));
+    --tw-prose-bullets: hsl(var(--accent) / 0.6);
+    --tw-prose-quotes: hsl(var(--foreground));
+    --tw-prose-code: hsl(var(--foreground));
+    --tw-prose-pre-code: hsl(var(--foreground));
+    --tw-prose-pre-bg: hsl(var(--muted) / 0.72);
+  }
+}
+
+@layer utilities {
+  .surface {
+    @apply rounded-4xl border border-border/80 bg-card/85 shadow-panel backdrop-blur;
+  }
+}

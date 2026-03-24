@@ -1,0 +1,10 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0F1C24"/>
+  <circle cx="973" cy="112" r="236" fill="#1FB9A0" fill-opacity="0.18"/>
+  <circle cx="163" cy="512" r="210" fill="#F1E0B8" fill-opacity="0.08"/>
+  <rect x="76" y="76" width="1048" height="478" rx="36" fill="#132731" stroke="#21414B"/>
+  <text x="120" y="210" fill="#2FD0B5" font-family="Georgia, serif" font-size="28" letter-spacing="8">PORTFOLIO / NEXT.JS / MDX / I18N</text>
+  <text x="120" y="320" fill="#F7F1E6" font-family="Georgia, serif" font-size="88" font-weight="700">Your Name</text>
+  <text x="120" y="392" fill="#D4D8DC" font-family="Arial, sans-serif" font-size="30">Production-style personal developer website with room for future experiments.</text>
+  <text x="120" y="476" fill="#BFC8CF" font-family="Arial, sans-serif" font-size="24">Next.js App Router • TypeScript • Tailwind CSS • next-intl • GitHub API • MDX</text>
+</svg>

@@ -1,0 +1,78 @@
+{
+  "Navigation": {
+    "home": "首页",
+    "projects": "项目",
+    "blog": "博客",
+    "about": "关于"
+  },
+  "Common": {
+    "featured": "精选",
+    "latest": "最新",
+    "liveDemo": "在线演示",
+    "sourceCode": "源码",
+    "updated": "更新时间",
+    "role": "职责",
+    "period": "周期",
+    "stack": "技术栈",
+    "repository": "仓库",
+    "githubStars": "Stars",
+    "githubForks": "Forks",
+    "githubLanguage": "语言",
+    "backToProjects": "返回项目列表",
+    "backToBlog": "返回博客列表",
+    "status": {
+      "active": "进行中",
+      "maintained": "维护中",
+      "archived": "已归档"
+    }
+  },
+  "Metadata": {
+    "defaultTitle": "作品集",
+    "defaultDescription": "一个采用 Next.js、TypeScript、Tailwind CSS、next-intl 与 MDX 构建的生产风格开发者作品集。",
+    "homeTitle": "首页",
+    "projectsTitle": "项目",
+    "blogTitle": "博客",
+    "aboutTitle": "关于"
+  },
+  "HomePage": {
+    "eyebrow": "全栈系统、产品思维，以及持续实验的空间",
+    "title": "用清晰、稳健且可扩展的基础设施构建高质量 Web 产品。",
+    "primaryCta": "查看项目",
+    "secondaryCta": "阅读博客",
+    "featuredProjectsTitle": "精选项目",
+    "featuredProjectsDescription": "结合产品项目、平台工具与界面实验，并支持本地内容管理与 GitHub 仓库数据接入。",
+    "latestPostsTitle": "最近写作",
+    "latestPostsDescription": "围绕系统设计、前端架构与务实工程实践的笔记。",
+    "pillarsTitle": "我的工作方式",
+    "pillarsDescription": "我偏好有设计感的界面、经得起演进的系统，以及能够吸收变化的代码库。"
+  },
+  "ProjectsPage": {
+    "title": "项目",
+    "description": "通过案例页面与实时仓库数据展示值得重点呈现的工作成果。",
+    "emptyTitle": "还没有项目",
+    "emptyDescription": "在 content/projects 目录下添加 MDX 文件即可发布项目页面。"
+  },
+  "BlogPage": {
+    "title": "博客",
+    "description": "博客内容基于本地 MDX 文件，发布简单、可迁移，也方便长期维护。",
+    "emptyTitle": "还没有文章",
+    "emptyDescription": "在 content/blog 目录下添加 MDX 文件即可发布文章。"
+  },
+  "AboutPage": {
+    "title": "关于",
+    "description": "这个站点从今天的作品集出发，但结构已经为未来扩展成更完整的产品实验场做好准备。",
+    "principlesTitle": "工程原则",
+    "principlesDescription": "构建用户侧系统时我会反复坚持的几个默认选择。",
+    "experimentsTitle": "后续实验方向",
+    "experimentsDescription": "把这个站点逐步演化成更大实验平台的几个方向。"
+  },
+  "Footer": {
+    "builtWith": "基于 Next.js、TypeScript、Tailwind CSS、next-intl 与 MDX 构建。",
+    "availability": "可参与产品工程、平台建设与高密度技术咨询合作。"
+  },
+  "NotFound": {
+    "title": "页面不存在",
+    "description": "你访问的页面不存在，或者当前语言下还没有对应内容。",
+    "backHome": "返回首页"
+  }
+}

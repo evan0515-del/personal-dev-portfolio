@@ -1,0 +1,34 @@
+---
+title: Architecting for Change, Not Just for Launch
+excerpt: Durable product systems come from clear boundaries and practical defaults, not from prematurely overbuilding everything.
+publishedAt: 2025-01-18
+updatedAt: 2025-02-02
+featured: true
+tags:
+  - Architecture
+  - Product Engineering
+  - Systems Design
+---
+
+Most teams talk about scalability early, but many codebases fail long before scale becomes the actual problem. They fail when new requirements start arriving faster than the existing structure can absorb them.
+
+## The real constraint is change
+
+In product work, requirements are rarely stable. New roles appear. Existing data models become leaky. Flows that looked simple turn into multi-step operational processes. If the system cannot adapt without broad rewrites, the cost of delivery keeps rising even when traffic is modest.
+
+## What helps in practice
+
+The patterns that age best are not always the most abstract ones. They are usually the ones that make responsibility obvious.
+
+- Keep route composition clear.
+- Separate content concerns from presentation.
+- Give integrations a dedicated layer instead of sprinkling fetch logic through UI code.
+- Let server rendering handle the boring but important parts first.
+
+## Why this matters for a portfolio site
+
+Even a personal site can become a product surface over time. It may start as a portfolio, then turn into a writing system, a project lab, an analytics dashboard, or a thin frontend for another backend service. If the structure is already clean, those transitions are much cheaper.
+
+## The bar I aim for
+
+I want codebases where adding a new capability feels like extending a system, not negotiating with it. That usually means fewer hidden dependencies, fewer ad hoc exceptions, and more intentional seams.

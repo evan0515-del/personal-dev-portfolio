@@ -1,0 +1,44 @@
+---
+title: Observability Lab
+summary: Developer-focused monitoring workspace for incident triage, release comparisons, and telemetry experiments.
+excerpt: An internal observability playground that turns raw signals into actionable engineering views.
+period: 2022 - Present
+role: Internal tooling, frontend architecture, data visualization
+repository: observability-lab
+demoUrl: https://example.com/observability-lab
+featured: true
+order: 3
+status: active
+stack:
+  - Next.js
+  - TypeScript
+  - Tailwind CSS
+  - ClickHouse
+  - OpenTelemetry
+tags:
+  - Observability
+  - Internal Tools
+  - DX
+---
+
+## Brief
+
+Engineers had metrics, traces, and logs, but context was fragmented. The challenge was not collecting more telemetry. It was making the existing data more legible for day-to-day decision making.
+
+## Product direction
+
+I treated the tool as a decision support layer instead of another dashboard wall. The interface emphasizes release comparison, incident narrowing, and lightweight anomaly review.
+
+## Technical choices
+
+- server-rendered summary panels for fast first paint
+- URL-driven filters for shareable debugging states
+- modular chart containers that can later be backed by different data providers
+
+## Why this project is useful
+
+It demonstrates how internal tooling can still benefit from product thinking. When observability interfaces are easier to read and share, teams spend less time interpreting tooling and more time solving production issues.
+
+## Future additions
+
+The architecture leaves room for a Python service later on, especially for anomaly scoring, background aggregation, or incident summarization pipelines.

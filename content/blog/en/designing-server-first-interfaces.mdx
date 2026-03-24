@@ -1,0 +1,34 @@
+---
+title: Designing Server-First Interfaces in Next.js
+excerpt: Server components are most useful when they are treated as a default architectural tool, not just a performance trick.
+publishedAt: 2024-11-08
+updatedAt: 2024-11-24
+featured: true
+tags:
+  - Next.js
+  - React
+  - Frontend Architecture
+---
+
+Server components are easy to frame as a rendering optimization. That is true, but incomplete. The bigger win is structural clarity.
+
+## Start with the stable parts
+
+Most pages contain a lot of information that does not need a client runtime to exist. Metadata, content loading, initial data fetches, and structural navigation are all stronger when they live on the server by default.
+
+## Add interaction intentionally
+
+Interactive code should exist because the user needs interaction, not because the architecture defaulted there. Theme toggles, locale switching, filtering, and motion are reasonable client islands. Everything else should justify its hydration cost.
+
+## Benefits beyond speed
+
+When the server owns the stable parts of the page:
+
+- data dependencies become easier to trace
+- SEO stays close to the route that needs it
+- client bundles stay smaller
+- integration logic becomes easier to cache and test
+
+## A practical rule
+
+If a component mainly reads data and formats UI, it probably belongs on the server. If it manages browser-only state or high-frequency interaction, it probably belongs on the client. The architecture becomes clearer when that distinction is enforced consistently.

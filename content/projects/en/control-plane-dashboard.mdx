@@ -1,0 +1,50 @@
+---
+title: Control Plane Dashboard
+summary: Multi-tenant admin surface for provisioning workspaces, managing access, and rolling out experiments safely.
+excerpt: A production-style control plane for internal operators and enterprise customers.
+period: 2024 - Present
+role: Product engineering, architecture, developer experience
+repository: control-plane-dashboard
+demoUrl: https://example.com/control-plane
+featured: true
+order: 1
+status: active
+stack:
+  - Next.js
+  - TypeScript
+  - Tailwind CSS
+  - PostgreSQL
+  - Redis
+tags:
+  - SaaS
+  - Multi-tenant
+  - Platform
+---
+
+## Context
+
+The goal was to build a control surface that could serve both internal operators and customer administrators without fragmenting the product into separate tools. That meant permissions, audit trails, and rollout controls all had to feel coherent in a single interface.
+
+## Architecture
+
+The UI is organized around server-first data loading, with thin interactive islands for table filtering, dialogs, and rollout toggles. That keeps the initial page load stable while still leaving room for richer client-side workflows where they actually matter.
+
+- Route-level data is fetched on the server for predictable caching.
+- Access logic is expressed as typed capabilities instead of scattered role checks.
+- Operational actions are logged through a shared audit event pipeline.
+
+## What I focused on
+
+I spent most of the time on information architecture and the parts that usually decay first:
+
+- consistent action hierarchy
+- recoverable destructive flows
+- clear operator feedback after long-running mutations
+
+## Why it matters
+
+Control-plane tooling tends to become messy because it is built under operational pressure. Treating it like a product instead of an afterthought made the system easier to train on, safer to operate, and much simpler to extend.
+
+## Next steps
+
+Future versions could add deeper analytics, per-tenant feature simulation, and a background job timeline for replaying operational events.

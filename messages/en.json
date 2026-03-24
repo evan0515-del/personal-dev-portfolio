@@ -1,0 +1,78 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "projects": "Projects",
+    "blog": "Blog",
+    "about": "About"
+  },
+  "Common": {
+    "featured": "Featured",
+    "latest": "Latest",
+    "liveDemo": "Live demo",
+    "sourceCode": "Source code",
+    "updated": "Updated",
+    "role": "Role",
+    "period": "Period",
+    "stack": "Stack",
+    "repository": "Repository",
+    "githubStars": "Stars",
+    "githubForks": "Forks",
+    "githubLanguage": "Language",
+    "backToProjects": "Back to projects",
+    "backToBlog": "Back to blog",
+    "status": {
+      "active": "Active",
+      "maintained": "Maintained",
+      "archived": "Archived"
+    }
+  },
+  "Metadata": {
+    "defaultTitle": "Portfolio",
+    "defaultDescription": "A production-style developer portfolio built with Next.js, TypeScript, Tailwind CSS, next-intl and MDX.",
+    "homeTitle": "Home",
+    "projectsTitle": "Projects",
+    "blogTitle": "Blog",
+    "aboutTitle": "About"
+  },
+  "HomePage": {
+    "eyebrow": "Full-stack systems, product thinking, room to experiment",
+    "title": "Building robust web products with a clean foundation for future ideas.",
+    "primaryCta": "View projects",
+    "secondaryCta": "Read blog",
+    "featuredProjectsTitle": "Selected projects",
+    "featuredProjectsDescription": "A mix of product work, platform tooling, and interface experiments backed by local content and live GitHub data.",
+    "latestPostsTitle": "Recent writing",
+    "latestPostsDescription": "Notes on system design, frontend architecture, and practical product engineering.",
+    "pillarsTitle": "How I work",
+    "pillarsDescription": "I like interfaces that feel deliberate, systems that age well, and codebases that can absorb change."
+  },
+  "ProjectsPage": {
+    "title": "Projects",
+    "description": "Detailed case studies and live repository metadata for the work I want to showcase.",
+    "emptyTitle": "No projects yet",
+    "emptyDescription": "Add MDX files under content/projects to publish project pages."
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "Writing powered by local MDX content so publishing stays simple and portable.",
+    "emptyTitle": "No posts yet",
+    "emptyDescription": "Add MDX files under content/blog to publish posts."
+  },
+  "AboutPage": {
+    "title": "About",
+    "description": "The site is organized to scale from a portfolio today to a broader product sandbox later.",
+    "principlesTitle": "Engineering principles",
+    "principlesDescription": "A few defaults I keep returning to when building user-facing systems.",
+    "experimentsTitle": "Future experiments",
+    "experimentsDescription": "Planned directions for turning this portfolio into a broader playground."
+  },
+  "Footer": {
+    "builtWith": "Built with Next.js, TypeScript, Tailwind CSS, next-intl and MDX.",
+    "availability": "Available for product engineering, platform work, and focused consulting."
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "The page you’re looking for doesn’t exist or hasn’t been translated yet.",
+    "backHome": "Back home"
+  }
+}
