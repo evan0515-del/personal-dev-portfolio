@@ -1,12 +1,22 @@
-.next
-node_modules
-.vercel
-out
-dist
+# Dependencies and generated output
+.next/
+node_modules/
+.vercel/
+out/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Operating system and editor temporary files
 .DS_Store
+Thumbs.db
+Desktop.ini
+*~
+*.swp
+*.swo
 *.log
+
+# Keep real environment files local; commit only the example.
 .env
-.env.local
-.env.development.local
-.env.production.local
-.env.test.local
+.env.*
+!.env.example

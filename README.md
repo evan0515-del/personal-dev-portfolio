@@ -1,6 +1,22 @@
 # Personal Developer Portfolio
 
-A production-style personal developer website built with Next.js App Router, TypeScript, Tailwind CSS, `next-intl`, local MDX content, and GitHub REST API integration.
+A personal developer portfolio starter built with Next.js App Router, TypeScript, Tailwind CSS, `next-intl`, local MDX content, and GitHub REST API integration.
+
+## Before publishing
+
+- Replace the sample profile, experience figures, contact links, projects, blog posts, and `public/og-image.svg` with verified personal content.
+- Set `NEXT_PUBLIC_SITE_URL` to the real deployment URL and `GITHUB_USERNAME` to your GitHub handle.
+- Keep real credentials in local or deployment environment variables. `GITHUB_TOKEN` is optional and must stay server-side; never prefix it with `NEXT_PUBLIC_`.
+- Complete the dependency maintenance below before using this starter in production.
+
+## Dependency maintenance
+
+Reviewed on 2026-10-28 against `package-lock.json`:
+
+- Next.js resolves to `14.2.35`. The 14.x line is [unsupported](https://nextjs.org/support-policy); plan and validate an upgrade to a supported release.
+- `next-mdx-remote` resolves to `5.0.0`, within the affected range of [HCSEC-2026-01 / CVE-2026-0969](https://discuss.hashicorp.com/t/hcsec-2026-01-arbitrary-code-execution-in-react-server-side-rendering-of-untrusted-mdx-content/77155). Version 6.0.0 introduces the fix and changes JavaScript-expression defaults. The current loader reads MDX from this repository's `content/` directory; keep that content trusted and validate rendering when upgrading.
+
+Dependency versions have not been changed by this housekeeping pass. These notes are a targeted review, not a complete dependency vulnerability audit.
 
 ## Stack
 
@@ -116,7 +132,7 @@ A production-style personal developer website built with Next.js App Router, Typ
 1. Install dependencies:
 
 ```bash
-npm install
+npm ci
 ```
 
 2. Create an environment file:
